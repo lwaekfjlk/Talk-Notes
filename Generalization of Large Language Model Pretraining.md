@@ -6,16 +6,16 @@ by Chenyan Xiong from MSR
 
 1. **Data**
 
-Pretraining Data Quality is really important!
+   Pretraining Data Quality is really important!
 
-Cleaning and filtering are necessary. (simply adding Fasttext classifier can improve quality)
+   Cleaning and filtering are necessary. (simply adding Fasttext classifier can improve quality)
 
 - BERT size pretraining data: Wikipedia + Google Book Corpus ~16GB text
 - XLNet and RoBERTa size pretraining data: Wikipedia + xxx ~100-200GB text
 - T5 size pretraining data: C4 ~ 745GB text
 - Larger high-quality pretraining dataset: ClueWeb22 (Bing’s 34TB high-quality web corpus open sourced for research community)
 
-1. **Pretrained Task**
+2. **Pretrained Task**
 
 - Pretraining Task Basics: MLM-style task is simply the most optimal pretrained task
 
@@ -33,7 +33,7 @@ Cleaning and filtering are necessary. (simply adding Fasttext classifier can imp
 
   In Dense Retrieval, focus more on full-text sequence embedding, use the **Sequence Contrastive Learning**
 
-1. **Model Architecture**
+3. **Model Architecture**
 
 - Transformer Basics: Easy to train than RNN, powerful and robust
 
@@ -64,7 +64,7 @@ Cleaning and filtering are necessary. (simply adding Fasttext classifier can imp
   - After Pretraining, the model decides the exploration spaces not me (prompt inputs might be more effective)
   - Data and training signals carry more information, the model just consumes them
 
-1. **Optimization**
+4. **Optimization**
 
 - Optimization Basics
 
@@ -96,7 +96,7 @@ Cleaning and filtering are necessary. (simply adding Fasttext classifier can imp
 
   Some initialization can help after 1 month of training
 
-1. **Scaling**
+5. **Scaling**
 
 - Parallel Training Basics
 
@@ -124,11 +124,11 @@ Cleaning and filtering are necessary. (simply adding Fasttext classifier can imp
 
   only there is a successful run, it is easy to speed it up but the first run is the most challenging one
 
-1. **Downstream Usage**
+6. **Downstream Usage**
 
-   Familiar fields including:
+   Familiar fields including:enrich LM (retrieval-augmented) / composition (chaining transformers) / zero(few) shot learning / finetuning
 
-   enrich LM (retrieval-augmented) / composition (chaining transformers) / zero(few) shot learning / finetuning
+   
 
 **A new Regime**
 
@@ -137,6 +137,8 @@ Differences from the pre-BERT era:
 - AI systems now respond to our intervention quite differently
 - Different bottlenecks in the full ecosystem, many times the challenge is not on the modeling size
 - Different model capacity, ability, and behaviors
+
+
 
 **New Directions**
 
@@ -155,6 +157,8 @@ Differences from the pre-BERT era:
   The generalization power of pretraining is mostly observed in NLP instead of CV
 
   In NLP, with tons of supervised labels finetuning, the benefits of pretraining still exist.
+
+  
 
 **Tips for Continual Pre-training task Design**
 
