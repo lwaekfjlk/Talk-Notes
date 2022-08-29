@@ -25,7 +25,7 @@ C dim for image encoder is no longer label number but feature number instead.
 
       ![multimodel1](./files/multimodel1.png)
 
-2. LSeg is tested under few-shot datasets and baselines due to a lack of a standardized protocol and sufficient datasets and baselines for the zero-shot setting
+2. LSeg is tested under **few-shot** datasets and baselines due to a lack of a standardized protocol and sufficient datasets and baselines for the zero-shot setting and win the SoTA performance
 
 3. LSeg with text encoder and image encoder is proved to incur only a negligible loss in performance when compared to the closest fixed-label segmentation method (which means text encoder does not bring too much harm to the whole architecture)
 
