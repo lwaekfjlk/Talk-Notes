@@ -8,3 +8,5 @@ Find one place to organize the notes for talks I attended at CMU.
 2. Deep Speech from the Deep
 2. A Decade of Machine Learning Accelerator
 2. How Flexport is using Machine Learning to Disrupt the $5T Global Trade and Logistics Industry
+2. Uncovering the Algorithmic Foundations of Language Learning and Processing
+2. Collaborative, Communal, & Continual Machine Learning
